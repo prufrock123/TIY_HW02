@@ -1,0 +1,104 @@
+* {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+
+body {
+	margin: 0px;
+}
+
+header {
+	background-image: url(http://static.tumblr.com/5a8bfe3f6898bd8a47f43df7a87d0160/w5gxxfv/iZBn8vkrk/tumblr_static_26afc8lb7gw0wg4o0g00o4g0w.jpg);
+	background-size: cover;
+	height: 250px;
+	min-height: 250px;
+	background-repeat: no-repeat;
+}
+
+.avatar {
+	display: none;
+}
+
+#container {
+	border: 2px solid black;
+	height: 800px;
+	min-width: 400px;
+}
+
+#left-column {
+	background-color: aquamarine;
+	height: 150px;
+	display: block;
+	width: 100%;
+}
+ 
+#right-column {
+
+	background-color: coral;
+	height: 500px;
+	display: block;
+	width: 100%;
+}
+
+@media all and (min-width: 700px) {
+	#container {
+		width: 60%;
+		margin: auto;
+		min-width: 800px;
+		font-size: 0;
+	}
+
+	#container > * {
+		font-size: normal;
+	}
+
+	#left-column {
+		display: inline-block;	
+		width: 25%;
+		height: 500px;
+		position: relative;
+	}
+
+	#left-column > h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		color: #333333;
+		line-height: 19px;
+		padding-right: 5px;
+		padding-left: 5px;
+		width: 95%;
+		display: block;
+		margin-top: 70px;
+		vertical-align: top;
+	}
+
+	#right-column {
+		display: inline-block;
+		width: 75%;
+		height: 500px;	
+		vertical-align: top;
+	}
+
+	#left-column .avatar {
+		display: block;
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100px;
+		width:	100px;
+		border-radius: 50%;
+		background-image: url(http://static.tumblr.com/37ca133c1a84d5b7856c51a7682df3e9/w5gxxfv/XWLn8vkrj/tumblr_static_6ujbwi4jats808kogwo44csgc.png);
+		background-size: cover;
+		border: 5px white solid;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+
+
+
+
